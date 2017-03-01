@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Math Example</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+
+	<body>
+		<h1>Math Example</h1>
+		<p>How random are JavaScript’s random numbers?</p>
+		<p>Let’s generate 5000 of them and find out.</p>
+		<script type="text/javascript">
+			var total = 0;
+			for (var i = 1; i <= 5000; i++) {
+				var number = Math.random();
+				total += number;
+				if (i % 1000 == 0) {
+					document.write("Generated " + i + " numbers...<br>");
+				}
+			}
+			var average = total / 5000;
+			average = Math.round(average * 1000) / 1000;
+			document.write("<h2>Average of 5000 numbers: " + average + "</h2>");
+		</script>
+	</body>
+
+
+
+</html>

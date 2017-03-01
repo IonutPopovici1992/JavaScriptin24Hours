@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Displaying Keypresses</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function DisplayKey(e) {
+				// which key was pressed?
+				if (e.keyCode) {
+					var keycode = e.keyCode;
+				} else {
+					keycode = e.which;
+				}
+				var character = String.fromCharCode(keycode);
+				// find the object for the destination paragraph
+				var k = document.getElementById("keys");
+				// add the character to the paragraph
+				k.innerHTML += character;
+			}
+		</script>
+	</head>
+
+
+	<body onkeypress="DisplayKey(event)">
+		<h1>Displaying Typed Characters</h1>
+		<p>This document includes a simple script that displays the keys you type in the paragraph below.</p>
+		<p>Type a few keys and try it.</p>
+		<p id="keys"></p>
+	</body>
+
+
+
+</html>

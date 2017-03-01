@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Testing script.aculo.us effects</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript" src="prototype.js"></script>
+		<script type="text/javascript" src="effects.js"></script>		
+	</head>
+
+
+	<body>
+		<h1>Testing script.aculo.us effects</h1>
+		<form name="form1">
+			<input type="button" value="Fade Out" onclick="Effect.Fade('test'); return false;">
+			<input type="button" value="Fade In" onclick="Effect.Appear('test'); return false;">
+			<input type="button" value="Slide Up" onclick="Effect.SlideUp('test'); return false;">
+			<input type="button" value="Slide Down" onclick="Effect.SlideDown('test'); return false;">
+			<input type="button" value="Highlight" onclick="Effect.Highlight('test'); return false;">
+			<input type="button" value="Shake" onclick="Effect.Shake('test'); return false;">
+		</form>
+		<div id="test" style="background-color: #CCCCCC; margin: 20px; padding: 10px;">
+			<h2>Testing Effects</h2>
+			<hr>
+			<p>This section of the document is within a &lt;div&gt; element with the <b>id</b> value <b>test</b>.</p>
+			<p>The event handlers on the buttons above send this object to the <a href=”http://script.aculo.us/”>script.aculo.us</a> library to perform effects.</p>
+			<p>Click the buttons to see the effects.</p>
+		</div>
+	</body>
+
+
+
+</html>
